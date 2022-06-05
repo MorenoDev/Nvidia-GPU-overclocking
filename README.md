@@ -32,7 +32,8 @@ nvidia-settings -c :0 -a '[gpu:0]/GPUMemoryTransferRateOffset[3]=2600' # Sets Me
 
 Solution:  
 `sudo /etc/X11/Xwrapper.config`  
-> Add line: needs_root_rights = yes 
+Add line: needs_root_rights = yes  
+`sudo reboot`  
 
 [reference 1](https://wiki.archlinux.org/title/NVIDIA/Troubleshooting#Overclocking_not_working_with_Unknown_Error "reference 1")  
 [reference 2](https://wiki.archlinux.org/title/Xorg#Rootless_Xorg "reference 1")  
