@@ -30,7 +30,7 @@ nvidia-settings -c :0 -a '[gpu:0]/GPUMemoryTransferRateOffset[3]=2600' # Sets Me
 > ERROR: Error assigning value -200 to attribute 'GPUGraphicsClockOffset'  
 > ERROR: Error assigning value 2600 to attribute 'GPUMemoryTransferRateOffset'  
 
-Solution:
+Solution:  
 `sudo /etc/X11/Xwrapper.config`  
 > Add line: needs_root_rights = yes 
 
