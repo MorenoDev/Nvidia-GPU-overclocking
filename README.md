@@ -1,24 +1,23 @@
-## Linux Nvidia GPU overclocking
+# Linux Nvidia GPU overclocking
 
-# Install Nvidia drivers
+### Install Nvidia drivers
 sudo apt install nvidia-driver-510
 sudo reboot
 
-
-# Delete Xorg file
+### Delete Xorg file
 sudo rm /etc/X11/xorg.conf
 
-# Enable overclocking
+### Enable overclocking
 sudo nvidia-xconfig -a --cool-bits=28 --allow-empty-initial-configuration
 reboot
 
-# Set clocks
+### Set clocks
 sudo -n nvidia-smi -i 0 --persistence-mode=1 # Sets persistent clocks
 sudo nvidia-smi -i 0 -pl 130 # Sets power limit to 130 watts
 nvidia-settings -c :0 -a '[gpu:0]/GPUGraphicsClockOffset[3]=-200' # Sets Core Clock to -200
 nvidia-settings -c :0 -a '[gpu:0]/GPUMemoryTransferRateOffset[3]=2600' # Sets Memory Clocks to 2600 (1300x2)
 
-## TROUBLESHOOTING
+# TROUBLESHOOTING
 
 Issue #1:
 ERROR: Error assigning value -200 to attribute 'GPUGraphicsClockOffset'
