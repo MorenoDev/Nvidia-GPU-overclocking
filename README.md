@@ -31,9 +31,14 @@ nvidia-settings -c :0 -a '[gpu:0]/GPUMemoryTransferRateOffset[3]=2600' # Sets Me
 > ERROR: Error assigning value 2600 to attribute 'GPUMemoryTransferRateOffset'  
 
 Solution:  
-`sudo /etc/X11/Xwrapper.config`  
+```bash
+sudo /etc/X11/Xwrapper.config
+```
+
 Add line: needs_root_rights = yes  
-`sudo reboot`  
+```bash
+sudo reboot
+```
 
 [reference 1](https://wiki.archlinux.org/title/NVIDIA/Troubleshooting#Overclocking_not_working_with_Unknown_Error "reference 1")  
 [reference 2](https://wiki.archlinux.org/title/Xorg#Rootless_Xorg "reference 1")  
