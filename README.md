@@ -27,12 +27,12 @@ nvidia-settings -c :0 -a '[gpu:0]/GPUMemoryTransferRateOffset[3]=2600' # Sets Me
 # TROUBLESHOOTING
 
 ### Issue 1:
-ERROR: Error assigning value -200 to attribute 'GPUGraphicsClockOffset'
-ERROR: Error assigning value 2600 to attribute 'GPUMemoryTransferRateOffset'
+> ERROR: Error assigning value -200 to attribute 'GPUGraphicsClockOffset'
+> ERROR: Error assigning value 2600 to attribute 'GPUMemoryTransferRateOffset'
 
 Solution:
 `sudo /etc/X11/Xwrapper.config`
-Add line: needs_root_rights = yes 
+> Add line: needs_root_rights = yes 
 
 [reference 1] (https://wiki.archlinux.org/title/NVIDIA/Troubleshooting#Overclocking_not_working_with_Unknown_Error)
 [reference 2] (https://wiki.archlinux.org/title/Xorg#Rootless_Xorg)
