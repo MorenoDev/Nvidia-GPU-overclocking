@@ -19,7 +19,7 @@ nvidia-settings -c :0 -a '[gpu:0]/GPUMemoryTransferRateOffset[3]=2600' # Sets Me
 
 # TROUBLESHOOTING
 
-Issue #1:
+### Issue 1:
 ERROR: Error assigning value -200 to attribute 'GPUGraphicsClockOffset'
 ERROR: Error assigning value 2600 to attribute 'GPUMemoryTransferRateOffset'
 
