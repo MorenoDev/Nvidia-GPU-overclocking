@@ -32,7 +32,7 @@ nvidia-settings -c :0 -a '[gpu:0]/GPUMemoryTransferRateOffset[3]=2600' # Sets Me
 
 Solution:  
 ```bash
-sudo /etc/X11/Xwrapper.config
+sudo vi /etc/X11/Xwrapper.config
 ```
 
 Add line: needs_root_rights = yes  
